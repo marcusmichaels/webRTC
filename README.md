@@ -30,3 +30,6 @@ This is an example of connecting a host stream to viewer either on the same comp
 This is an implementation with no database or signalling server. Ideally, the manual handshakes you just did would be done automagically, but for the sake of education, this is a nice example of how each party talks to each other.
 
 Next step – DIY baby monitor.
+
+## P.S. Check the console for logs
+You can also use `lc.send("Hello viewer")` and `rc.dc.send("Hello host")` to send a console messages to eachother
