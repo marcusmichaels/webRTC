@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Host WebRTC</title>
+    <meta name="viewport" content="width=device-width;" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/localConnection.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Host WebRTC</h1>
+      <div class="video-wrapper">
+        <video class="video local" autoplay playsinline controls></video>
+      </div>
+
+      <button onclick="createLocalConnection()">Generate local offer</button>
+      <br />
+      <textarea
+        id="local-sdp"
+        placeholder="Give this SDP to the viewer"
+      ></textarea>
+      <textarea
+        id="remote-sdp"
+        placeholder="Add viewer SDP response here"
+      ></textarea>
+      <br />
+      <button onclick="handleLocalConnection()">Connect!</button>
+      <br />
+      <button onclick="closeLocalConnection()">Disconnect!</button>
+    </div>
+  </body>
+</html>

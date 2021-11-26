@@ -1,0 +1,31 @@
+.video {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+
+.choice-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.45rem;
+}
+
+textarea {
+  display: inline-block;
+  width: 49%;
+  height: 10rem;
+}
+
+button {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.2rem;
+}

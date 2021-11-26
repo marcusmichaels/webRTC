@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Viewer WebRTC</title>
+    <meta name="viewport" content="width=device-width;" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/remoteConnection.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Viewer WebRTC</h1>
+      <div class="video-wrapper">
+        <video class="video remote" autoplay playsinline controls></video>
+      </div>
+
+      <button onclick="createRemoteConnection()">Generate remote answer</button>
+      <br />
+      <textarea id="local-sdp" placeholder="Add host SDP here"></textarea>
+      <textarea
+        id="remote-sdp"
+        placeholder="Give this SDP response to the host"
+      ></textarea>
+      <br />
+      <button onclick="closeRemoteConnection()">Disconnect!</button>
+    </div>
+  </body>
+</html>
